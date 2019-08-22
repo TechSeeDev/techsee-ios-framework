@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   s.license      = 'MIT'
 
   s.platform     = :ios, '10'
-s.source       = { :git => 'https://github.com/TechSeeDev/techsee-ios-framework.git', :tag => '2.3.1' }
+s.source       = { :git => 'https://github.com/TechSeeDev/techsee-ios-framework.git', :tag => '1.0.5' }
 
 s.ios.deployment_target  = '10.0'
 s.resources = 'TechSeeLiveFramework/**/**/*.{png,jpeg,jpg,storyboard,xib,xcassets}'
