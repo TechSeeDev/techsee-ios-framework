@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
   s.summary      = 'TechSeeLiveFramework framework'
   s.author       = { 'Shlomi Sharon' => 'shlomis@techsee.me' }
   s.homepage     = 'https://techsee.me'
-  s.license      = 'MIT'
+  s.license      = 'LICENSE.md'
 
   s.platform     = :ios, '10'
 s.source       = { :git => 'https://github.com/TechSeeDev/techsee-ios-framework.git', :tag => '1.0.5' }
