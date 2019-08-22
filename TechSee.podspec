@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
 s.source       = { :git => 'https://github.com/TechSeeDev/techsee-ios-framework.git', :tag => '1.0.5' }
 
 s.ios.deployment_target  = '10.0'
-s.resources = 'TechSeeLiveFramework.framework/**/**/*.{png,jpeg,jpg,storyboard,xib,xcassets}'
+#s.resources = 'TechSeeLiveFramework.framework/**/**/*.{png,json,jpeg,jpg,storyboard,nib,xcassets}'
 s.public_header_files = 'TechSeeLiveFramework.framework/TechSee.{h}'
 
 s.static_framework = true
