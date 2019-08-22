@@ -12,7 +12,7 @@ s.source       = { :git => 'https://github.com/TechSeeDev/techsee-ios-framework.
 
 s.ios.deployment_target  = '10.0'
 #s.resources = 'TechSeeLiveFramework.framework/**/**/*.{png,json,jpeg,jpg,storyboard,nib,xcassets}'
-s.public_header_files = 'TechSeeLiveFramework.framework/TechSee.{h}'
+#s.public_header_files = 'TechSeeLiveFramework.framework/TechSee.{h}'
 
 s.static_framework = true
 
