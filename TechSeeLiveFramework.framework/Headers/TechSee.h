@@ -31,8 +31,8 @@ typedef NS_ENUM(NSUInteger, enviroments) {
 @end
 
 @protocol StartSessionProtocol <NSObject>
-- (void)startSession:(NSString *)roomCode;
-- (void)startSessionFailure:(NSString *)error;
+- (void)startSession:(NSString *_Nonnull)roomCode;
+- (void)startSessionFailure:(NSString *_Nullable)error;
 @end
 
 
@@ -41,12 +41,12 @@ typedef NS_ENUM(NSUInteger, enviroments) {
 @property (weak, nonatomic) id <AuthenticationProtool> _Nullable delegate;
 @property (weak, nonatomic) id <StartSessionProtocol> _Nullable delegateStartSession;
 @property (weak, nonatomic) id <JoinSessionProtocol> _Nullable delegateJoinSession;
-+ (instancetype)shared;
-- (void)authenticate: (NSString *)apiKey apiSecret: (NSString *)apiSecret env:(NSString *)env;
++ (instancetype _Nonnull )shared;
+- (void)authenticate: (NSString *_Nonnull)apiKey apiSecret: (NSString *_Nullable)apiSecret env:(NSString *_Nonnull)env;
 //- (void)authenticate:(NSString *)apiKey apiSecret:(NSString *)apiSecret;
 // (void)authenticate: (NSString *)username password: (NSString *)password env:(NSString *)env;
-- (void)joinSession: (NSURL *)sessionLink;
-- (NSMutableData *)getLogs;
+- (void)joinSession: (NSURL *_Nonnull)sessionLink;
+- (NSMutableData *_Nullable)getLogs;
 //- (void)startSession;
-- (NSString *)closeSession;
+- (NSString *_Nonnull)closeSession;
 @end
