@@ -63,7 +63,7 @@ s.frameworks = 'Foundation',
     s.dependency 'OpenTok', '= 2.15.2'
 
     #Animation
-    s.dependency 'lottie-ios', '= 2.5.3'
+#s.dependency 'lottie-ios', '= 2.5.3'
 
     #Logging
     s.dependency 'CocoaLumberjack'

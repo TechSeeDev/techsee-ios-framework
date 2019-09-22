@@ -42,8 +42,8 @@ typedef NS_ENUM(NSUInteger, enviroments) {
 @property (weak, nonatomic) id <StartSessionProtocol> _Nullable delegateStartSession;
 @property (weak, nonatomic) id <JoinSessionProtocol> _Nullable delegateJoinSession;
 + (instancetype _Nonnull )shared;
-- (void)authenticate: (NSString *_Nonnull)apiKey apiSecret: (NSString *_Nullable)apiSecret env:(NSString *_Nonnull)env;
-//- (void)authenticate:(NSString *)apiKey apiSecret:(NSString *)apiSecret;
+//- (void)authenticate: (NSString *_Nonnull)apiKey apiSecret: (NSString *_Nullable)apiSecret env:(NSString *_Nonnull)env;
+- (void)authenticate:(NSString *_Nonnull)apiKey apiSecret:(NSString *_Nonnull)apiSecret;
 // (void)authenticate: (NSString *)username password: (NSString *)password env:(NSString *)env;
 - (void)joinSession: (NSURL *_Nonnull)sessionLink;
 - (NSMutableData *_Nullable)getLogs;
