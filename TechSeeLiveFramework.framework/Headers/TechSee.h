@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <ReplayKit/ReplayKit.h>
 
 typedef NS_ENUM(NSUInteger, enviroments) {
     none = 0,
@@ -19,6 +20,13 @@ typedef NS_ENUM(NSUInteger, enviroments) {
     pretest = 7,
     hagrid = 8
 };
+
+typedef enum : NSUInteger {
+    BroadcastStarted,
+    BroadcastPaused,
+    BroadcastResumed,
+    BroadcastFinished,
+} BroadcastStatus;
 
 @protocol AuthenticationProtool <NSObject>
 - (void)authenticateSuccessful;
@@ -38,15 +46,31 @@ typedef NS_ENUM(NSUInteger, enviroments) {
 
 
 @interface TechSee : NSObject
+
+
+#pragma mark - TechSee API's -
+
+
 @property (weak, nonatomic) id <AuthenticationProtool> _Nullable delegate;
 @property (weak, nonatomic) id <StartSessionProtocol> _Nullable delegateStartSession;
 @property (weak, nonatomic) id <JoinSessionProtocol> _Nullable delegateJoinSession;
 + (instancetype _Nonnull )shared;
-//- (void)authenticate: (NSString *_Nonnull)apiKey apiSecret: (NSString *_Nullable)apiSecret env:(NSString *_Nonnull)env;
-- (void)authenticate:(NSString *_Nonnull)apiKey apiSecret:(NSString *_Nonnull)apiSecret;
+- (void)authenticate: (NSString *_Nonnull)apiKey apiSecret: (NSString *_Nullable)apiSecret env:(NSString *_Nonnull)env;
+//- (void)authenticate:(NSString *)apiKey apiSecret:(NSString *)apiSecret;
 // (void)authenticate: (NSString *)username password: (NSString *)password env:(NSString *)env;
 - (void)joinSession: (NSURL *_Nonnull)sessionLink;
 - (NSMutableData *_Nullable)getLogs;
 //- (void)startSession;
 - (NSString *_Nonnull)closeSession;
+
+
+#pragma mark - App extension API's -
+
+- (void)broadcastStarted;
+- (void)broadcastPaused;
+- (void)broadcastResumed;
+- (void)broadcastFinished;
+- (void)processSampleBuffer:(CMSampleBufferRef _Nonnull )sampleBuffer WithSampleBufferType:(RPSampleBufferType)sampleBufferType;
+- (void)userDidFinishSetup;
+- (void)userDidCancelSetup;
 @end

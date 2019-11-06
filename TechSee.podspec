@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name         = 'TechSee'
-  s.version      = '2.3.2'
+  s.version      = '2.3.2.1'
   s.summary      = 'TechSeeLiveFramework framework'
   s.author       = { 'Shlomi Sharon' => 'shlomis@techsee.me' }
   s.homepage     = 'https://techsee.me'
@@ -21,7 +21,7 @@ LICENSE
 }
 
   s.platform     = :ios, '10'
-s.source       = { :git => 'https://github.com/TechSeeDev/techsee-ios-framework.git', :tag => '2.3.2' }
+s.source       = { :git => 'https://github.com/TechSeeDev/techsee-ios-framework.git', :tag => '2.3.2.1' }
 
 s.ios.deployment_target  = '10.0'
 #s.resources = 'TechSeeLiveFramework.framework/**/**/*.{png,json,jpeg,jpg,storyboard,nib,xcassets}'
@@ -60,7 +60,6 @@ s.frameworks = 'Foundation',
 
     #WebRTC
     s.dependency 'TechSeeWebRTC', '= 1.0'
-    s.dependency 'OpenTok', '= 2.15.2'
 
     #Animation
 #s.dependency 'lottie-ios', '= 2.5.3'
