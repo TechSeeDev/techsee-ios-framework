@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name         = 'TechSee'
-  s.version      = '2.3.2'
+  s.version      = '2.3.2Internal'
   s.summary      = 'TechSeeLiveFramework framework'
   s.author       = { 'Shlomi Sharon' => 'shlomis@techsee.me' }
   s.homepage     = 'https://techsee.me'
@@ -21,7 +21,7 @@ LICENSE
 }
 
   s.platform     = :ios, '10'
-s.source       = { :git => 'https://github.com/TechSeeDev/techsee-ios-framework.git', :tag => '2.3.2' }
+s.source       = { :git => 'https://github.com/TechSeeDev/techsee-ios-framework.git', :tag => '2.3.2Internal' }
 
 s.ios.deployment_target  = '10.0'
 #s.resources = 'TechSeeLiveFramework.framework/**/**/*.{png,json,jpeg,jpg,storyboard,nib,xcassets}'
