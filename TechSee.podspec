@@ -59,7 +59,7 @@ s.frameworks = 'Foundation',
     #s.dependency 'AFNetworking'
 
     #WebRTC
-#    s.dependency 'TechSeeWebRTC', '= 1.0'
+    s.dependency 'TechSeeWebRTC', '= 1.0'
  #   s.dependency 'OpenTok', '= 2.15.2'
 
     #Animation
