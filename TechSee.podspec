@@ -49,22 +49,22 @@ s.frameworks = 'Foundation',
     s.libraries = 'c++'
 
     #UI
-    s.dependency 'MBProgressHUD', '~> 1.1.0'
+  #  s.dependency 'MBProgressHUD', '~> 1.1.0'
 
     #Data
-    s.dependency 'DeviceUtil', '~> 4.0.2'
+  #  s.dependency 'DeviceUtil', '~> 4.0.2'
 
     #Network
-    s.dependency 'VPSocketIO'
-    s.dependency 'AFNetworking'
+   # s.dependency 'VPSocketIO'
+    #s.dependency 'AFNetworking'
 
     #WebRTC
-    s.dependency 'TechSeeWebRTC', '= 1.0'
-    s.dependency 'OpenTok', '= 2.15.2'
+#    s.dependency 'TechSeeWebRTC', '= 1.0'
+ #   s.dependency 'OpenTok', '= 2.15.2'
 
     #Animation
 #s.dependency 'lottie-ios', '= 2.5.3'
 
     #Logging
-    s.dependency 'CocoaLumberjack'
+  #  s.dependency 'CocoaLumberjack'
 end
