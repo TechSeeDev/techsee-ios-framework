@@ -45,6 +45,22 @@ s.frameworks = 'Foundation',
 
     s.libraries = 'c++'
 
+    #UI
+  #  s.dependency 'MBProgressHUD', '~> 1.1.0'
+
+    #Data
+    s.dependency 'DeviceUtil', '~> 4.0.2'
+
+    #Network
+    s.dependency 'VPSocketIO'
+
     #WebRTC
     s.dependency 'TechSeeWebRTC', '= 1.1'
+    s.dependency 'OpenTok', '= 2.15.2'
+
+    #Animation
+#s.dependency 'lottie-ios', '= 2.5.3'
+
+    #Logging
+  #  s.dependency 'CocoaLumberjack'
 end
