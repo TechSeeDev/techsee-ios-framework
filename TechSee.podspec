@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name         = 'TechSee'
-  s.version      = '2.3.3'
+  s.version      = '2.2.2'
   s.summary      = 'TechSee SDK'
   s.author       = { 'Shlomi Sharon' => 'shlomis@techsee.me' }
   s.homepage     = 'https://techsee.me'
@@ -21,7 +21,7 @@ LICENSE
 }
 
 s.platform     = :ios, '11'
-s.source       = { :git => 'https://github.com/TechSeeDev/techsee-ios-framework.git', :tag => '2.3.3' }
+s.source       = { :git => 'https://github.com/TechSeeDev/techsee-ios-framework.git', :tag => '2.2.2' }
 
 s.ios.deployment_target  = '11.0'
 s.static_framework = true
@@ -49,14 +49,14 @@ s.frameworks = 'Foundation',
   #  s.dependency 'MBProgressHUD', '~> 1.1.0'
 
     #Data
-    s.dependency 'DeviceUtil', '~> 4.0.2'
+   # s.dependency 'DeviceUtil', '~> 4.0.2'
 
     #Network
-    s.dependency 'VPSocketIO'
+   # s.dependency 'VPSocketIO'
 
     #WebRTC
     s.dependency 'TechSeeWebRTC', '= 1.1'
-    s.dependency 'OpenTok', '= 2.15.2'
+   # s.dependency 'OpenTok', '= 2.15.2'
 
     #Animation
 #s.dependency 'lottie-ios', '= 2.5.3'
