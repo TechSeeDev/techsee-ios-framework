@@ -53,7 +53,7 @@ s.frameworks = 'Foundation',
 
     #WebRTC
     s.dependency 'TechSeeWebRTC', '= 1.1'
-   # s.dependency 'OpenTok', '= 2.15.2'
+   s.dependency 'OpenTok', '= 2.15.2'
 
     #Animation
 #s.dependency 'lottie-ios', '= 2.5.3'
