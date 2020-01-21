@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name         = 'TechSee'
-  s.version      = '2.3.3'
+  s.version      = '2.3.4'
   s.summary      = 'TechSee SDK'
   s.author       = { 'Shlomi Sharon' => 'shlomis@techsee.me' }
   s.homepage     = 'https://techsee.me'
@@ -46,18 +46,18 @@ s.frameworks = 'Foundation',
     s.libraries = 'c++'
 
     #Data
-   # s.dependency 'DeviceUtil', '~> 4.0.2'
+    #s.dependency 'DeviceUtil', '~> 4.0.2'
 
     #Network
-   # s.dependency 'VPSocketIO'
+    #s.dependency 'VPSocketIO'
 
     #WebRTC
     s.dependency 'TechSeeWebRTC', '= 1.1'
-   s.dependency 'OpenTok', '= 2.15.2'
+    s.dependency 'OpenTok', '= 2.15.2'
 
     #Animation
-#s.dependency 'lottie-ios', '= 2.5.3'
+    #s.dependency 'lottie-ios', '= 2.5.3'
 
     #Logging
-  #  s.dependency 'CocoaLumberjack'
+    #s.dependency 'CocoaLumberjack'
 end
