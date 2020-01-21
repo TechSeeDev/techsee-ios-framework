@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name         = 'TechSee'
-  s.version      = '2.2.2'
+  s.version      = '2.3.3'
   s.summary      = 'TechSee SDK'
   s.author       = { 'Shlomi Sharon' => 'shlomis@techsee.me' }
   s.homepage     = 'https://techsee.me'
@@ -21,7 +21,7 @@ LICENSE
 }
 
 s.platform     = :ios, '11'
-s.source       = { :git => 'https://github.com/TechSeeDev/techsee-ios-framework.git', :tag => '2.2.2' }
+s.source       = { :git => 'https://github.com/TechSeeDev/techsee-ios-framework.git', :tag => s.version }
 
 s.ios.deployment_target  = '11.0'
 s.static_framework = true
@@ -44,9 +44,6 @@ s.frameworks = 'Foundation',
         'VideoToolbox'
 
     s.libraries = 'c++'
-
-    #UI
-  #  s.dependency 'MBProgressHUD', '~> 1.1.0'
 
     #Data
    # s.dependency 'DeviceUtil', '~> 4.0.2'

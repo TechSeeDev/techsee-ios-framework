@@ -43,6 +43,15 @@ typedef enum : NSUInteger {
 - (void)startSessionFailure:(NSString *_Nullable)error;
 @end
 
+@protocol ScreenTOS <NSObject>
+- (void)tosApproval:(BOOL)isApprove;
+@end
+
+@protocol Cursor <NSObject>
+- (void)moveCursor:(CGRect)frame;
+- (void)hideCursor;
+@end
+
 
 
 @interface TechSee : NSObject
@@ -54,6 +63,8 @@ typedef enum : NSUInteger {
 @property (weak, nonatomic) id <AuthenticationProtool> _Nullable delegate;
 @property (weak, nonatomic) id <StartSessionProtocol> _Nullable delegateStartSession;
 @property (weak, nonatomic) id <JoinSessionProtocol> _Nullable delegateJoinSession;
+@property (weak, nonatomic) id <ScreenTOS> _Nullable screenTOS;
+@property (weak, nonatomic) id <Cursor> _Nullable cursor;
 + (instancetype _Nonnull )shared;
 //- (void)authenticate: (NSString *_Nonnull)apiKey apiSecret: (NSString *_Nullable)apiSecret env:(NSString *_Nonnull)env;
 - (void)authenticate:(NSString *_Nonnull)apiKey apiSecret:(NSString *_Nonnull)apiSecret;
