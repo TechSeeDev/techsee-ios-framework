@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name         = 'TechSee'
-  s.version      = '2.3.4'
+  s.version      = '2.3.5'
   s.summary      = 'TechSee SDK'
   s.author       = { 'Shlomi Sharon' => 'shlomis@techsee.me' }
   s.homepage     = 'https://techsee.me'
@@ -53,7 +53,6 @@ s.frameworks = 'Foundation',
 
     #WebRTC
     s.dependency 'TechSeeWebRTC', '= 1.1'
-    s.dependency 'OpenTok', '= 2.15.2'
 
     #Animation
     #s.dependency 'lottie-ios', '= 2.5.3'

@@ -9,17 +9,6 @@
 #import <Foundation/Foundation.h>
 #import <ReplayKit/ReplayKit.h>
 
-typedef NS_ENUM(NSUInteger, enviroments) {
-    none = 0,
-    app = 1,
-    app1 = 2,
-    demo = 3,
-    staging = 4,
-    rc = 5,
-    test = 6,
-    pretest = 7,
-    hagrid = 8
-};
 
 typedef enum : NSUInteger {
     BroadcastStarted,
@@ -28,7 +17,7 @@ typedef enum : NSUInteger {
     BroadcastFinished,
 } BroadcastStatus;
 
-@protocol AuthenticationProtool <NSObject>
+@protocol AuthenticationProtocol <NSObject>
 - (void)authenticateSuccessful;
 - (void)authenticateFailure:(NSString * _Nullable)error internalError :(NSString * _Nullable)internalError;
 @end
@@ -53,18 +42,18 @@ typedef enum : NSUInteger {
 @end
 
 
-
 @interface TechSee : NSObject
 
 
 #pragma mark - TechSee API's -
 
 
-@property (weak, nonatomic) id <AuthenticationProtool> _Nullable delegate;
+@property (weak, nonatomic) id <AuthenticationProtocol> _Nullable delegate;
 @property (weak, nonatomic) id <StartSessionProtocol> _Nullable delegateStartSession;
 @property (weak, nonatomic) id <JoinSessionProtocol> _Nullable delegateJoinSession;
 @property (weak, nonatomic) id <ScreenTOS> _Nullable screenTOS;
 @property (weak, nonatomic) id <Cursor> _Nullable cursor;
+@property (nonatomic, strong) NSString * _Nullable backendURL;
 + (instancetype _Nonnull )shared;
 //- (void)authenticate: (NSString *_Nonnull)apiKey apiSecret: (NSString *_Nullable)apiSecret env:(NSString *_Nonnull)env;
 - (void)authenticate:(NSString *_Nonnull)apiKey apiSecret:(NSString *_Nonnull)apiSecret;
@@ -76,7 +65,7 @@ typedef enum : NSUInteger {
 
 #pragma mark - App extension API's -
 
-- (void)broadcastStarted;
+- (void)broadcastStarted:(RPBroadcastSampleHandler *_Nonnull)handler;
 - (void)broadcastPaused;
 - (void)broadcastResumed;
 - (void)broadcastFinished;
