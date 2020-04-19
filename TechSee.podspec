@@ -50,7 +50,7 @@ s.frameworks = 'Foundation',
 
     #Network
     s.dependency 'Socket.IO-Client-Swift', '~> 15.2.0'
-    s.dependency 'AFNetworking', '~> 4.0'
+    #s.dependency 'AFNetworking', '~> 4.0'
 
     #WebRTC
     s.dependency 'TechSeeWebRTC', '= 1.1'
