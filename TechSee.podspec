@@ -49,14 +49,14 @@ s.frameworks = 'Foundation',
     #s.dependency 'DeviceUtil', '~> 4.0.2'
 
     #Network
-    s.dependency 'Socket.IO-Client-Swift', '~> 15.2.0'
+    #s.dependency 'Socket.IO-Client-Swift', '~> 15.2.0'
     #s.dependency 'AFNetworking', '~> 4.0'
 
     #WebRTC
     s.dependency 'TechSeeWebRTC', '= 1.1'
 
     #Animation
-    s.dependency 'lottie-ios', '= 2.5.3'
+    #s.dependency 'lottie-ios', '= 2.5.3'
 
     #Logging
     #s.dependency 'CocoaLumberjack'
