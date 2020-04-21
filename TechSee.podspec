@@ -41,9 +41,8 @@ s.frameworks = 'Foundation',
         'QuartzCore',
         'SystemConfiguration',
         'UIKit',
-        'VideoToolbox',
-        'CFNetwork'
-
+        'VideoToolbox'
+        
     s.libraries = 'c++'
 
     #WebRTC
