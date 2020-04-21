@@ -47,4 +47,5 @@ s.frameworks = 'Foundation',
 
     #WebRTC
     s.dependency 'TechSeeWebRTC', '= 1.1'
+    s.dependency 'AFNetworking', '~> 4.0'
 end
