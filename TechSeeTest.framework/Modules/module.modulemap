@@ -1,0 +1,6 @@
+framework module TechSeeTest {
+  umbrella header "TechSeeTest.h"
+
+  export *
+  module * { export * }
+}

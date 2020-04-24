@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name         = 'TechSee'
-  s.version      = '2.4.6'
+  s.version      = '2.4.7'
   s.summary      = 'TechSee SDK'
   s.author       = { 'Shlomi Sharon' => 'shlomis@techsee.me' }
   s.homepage     = 'https://techsee.me'
@@ -26,7 +26,7 @@ s.source       = { :git => 'https://github.com/TechSeeDev/techsee-ios-framework.
 s.ios.deployment_target  = '11.0'
 #s.static_framework = true
 
-s.vendored_frameworks = 'TechSeeLiveFramework.framework'
+s.vendored_frameworks = 'TechSeeTest.framework'
 
 s.frameworks = 'Foundation',
         'AVFoundation',
