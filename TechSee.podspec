@@ -47,6 +47,6 @@ s.frameworks = 'Foundation',
     s.libraries = 'c++'
 
     #WebRTC
-    s.dependency 'Socket.IO-Client-Swift', '~> 15.2.0'
+    s.ios.dependency 'Socket.IO-Client-Swift', '~> 15.2.0'
     s.dependency 'TechSeeWebRTC', '= 1.1'
 end
