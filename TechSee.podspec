@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name         = 'TechSee'
-  s.version      = '2.3.5'
+  s.version      = '2.3.6'
   s.summary      = 'TechSee SDK'
   s.author       = { 'Shlomi Sharon' => 'shlomis@techsee.me' }
   s.homepage     = 'https://techsee.me'
@@ -24,7 +24,7 @@ s.platform     = :ios, '11'
 s.source       = { :git => 'https://github.com/TechSeeDev/techsee-ios-framework.git', :tag => s.version }
 
 s.ios.deployment_target  = '11.0'
-s.static_framework = true
+#s.static_framework = true
 
 s.vendored_frameworks = 'TechSeeLiveFramework.framework'
 
@@ -46,5 +46,6 @@ s.frameworks = 'Foundation',
     s.libraries = 'c++'
 
     #WebRTC
+    s.dependency 'Socket.IO-Client-Swift', '~> 15.2.0'
     s.dependency 'TechSeeWebRTC', '= 1.1'
 end
