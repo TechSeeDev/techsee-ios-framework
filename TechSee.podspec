@@ -25,6 +25,7 @@ s.source       = { :git => 'https://github.com/TechSeeDev/techsee-ios-framework.
 
 s.ios.deployment_target  = '11.0'
 s.static_framework = true
+s.swift_version = '5.0'
 
 s.vendored_frameworks = 'TechSeeLiveFramework.framework'
 
