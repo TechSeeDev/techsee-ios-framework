@@ -47,6 +47,7 @@ s.vendored_frameworks = 'TechSeeLiveFramework.framework'
 #    s.libraries = 'c++'
 
     #WebRTC
-    s.dependency 'Socket.IO-Client-Swift', '~> 15.2.0'
+    s.dependency 'OpenTok'
     s.dependency 'TechSeeWebRTC', '= 1.1'
+    s.dependency 'Socket.IO-Client-Swift', '~> 15.2.0'
 end
