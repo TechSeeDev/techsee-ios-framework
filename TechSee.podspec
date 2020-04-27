@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name         = 'TechSee'
-  s.version      = '2.3.5'
+  s.version      = '2.3.6'
   s.summary      = 'TechSee SDK'
   s.author       = { 'Shlomi Sharon' => 'shlomis@techsee.me' }
   s.homepage     = 'https://techsee.me'
