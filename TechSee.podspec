@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name         = 'TechSee'
-  s.version      = '2.3.6'
+  s.version      = '2.3.5'
   s.summary      = 'TechSee SDK'
   s.author       = { 'Shlomi Sharon' => 'shlomis@techsee.me' }
   s.homepage     = 'https://techsee.me'
@@ -29,25 +29,7 @@ s.swift_version = '5.0'
 
 s.vendored_frameworks = 'TechSeeLiveFramework.framework'
 
-#s.frameworks = 'Foundation',
-#        'AVFoundation',
-#        'AudioToolbox',
-#        'CoreFoundation',
-#        'CoreGraphics',
-#        'CoreMedia',
-#        'CoreTelephony',
-#        'CoreVideo',
-#        'GLKit',
-#        'OpenGLES',
-#        'QuartzCore',
-#        'SystemConfiguration',
-#        'UIKit',
-#        'VideoToolbox'
-#
-#    s.libraries = 'c++'
-
-    #WebRTC
-    s.dependency 'OpenTok'
-    s.dependency 'TechSeeWebRTC', '= 1.1'
-    s.dependency 'Socket.IO-Client-Swift', '~> 15.2.0'
+#WebRTC
+s.dependency 'TechSeeWebRTC', '= 1.1'
+s.dependency 'Socket.IO-Client-Swift', '~> 15.2.0'
 end
