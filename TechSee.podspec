@@ -29,25 +29,26 @@ s.swift_version = '5.0'
 
 s.vendored_frameworks = 'TechSeeLiveFramework.framework'
 
-#s.frameworks = 'Foundation',
-#        'AVFoundation',
-#        'AudioToolbox',
-#        'CoreFoundation',
-#        'CoreGraphics',
-#        'CoreMedia',
-#        'CoreTelephony',
-#        'CoreVideo',
-#        'GLKit',
-#        'OpenGLES',
-#        'QuartzCore',
-#        'SystemConfiguration',
-#        'UIKit',
-#        'VideoToolbox'
-#
-#    s.libraries = 'c++'
+s.frameworks = 'Foundation',
+        'AVFoundation',
+        'AudioToolbox',
+        'CoreFoundation',
+        'CoreGraphics',
+        'CoreMedia',
+        'CoreTelephony',
+        'CoreVideo',
+        'GLKit',
+        'OpenGLES',
+        'QuartzCore',
+        'SystemConfiguration',
+        'UIKit',
+        'VideoToolbox'
+
+    s.libraries = 'c++'
 
     #WebRTC
-    s.dependency 'OpenTok'
     s.dependency 'TechSeeWebRTC', '= 1.1'
+    
+    #Socket
     s.dependency 'Socket.IO-Client-Swift', '~> 15.2.0'
 end
